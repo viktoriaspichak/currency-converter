@@ -24,17 +24,30 @@ function calculateForInput2() {
     let convertFrom =  $('#select1').val();
     let convertTo =  $('#select2').val();
     let amount = $('#input1').val();
-    let converted = convert(convertFrom, convertTo, amount)
-    $('#input2').val(converted);
+    if(!isNaN(amount)) {
+        let converted = convert(convertFrom, convertTo, amount)
+        $('#input2').val(converted);
+    }
+    else
+    {
+        $('#input1').val('');
+    }
 }
 
 function calculateForInput1() {
     let convertFrom =  $('#select2').val();
     let convertTo =  $('#select1').val();
     let amount = $('#input2').val();
-    let converted = convert(convertFrom, convertTo, amount)
-    $('#input1').val(converted);
+    if(!isNaN(amount)) {
+        let converted = convert(convertFrom, convertTo, amount)
+        $('#input1').val(converted);
+    }
+    else
+    {
+        $('#input2').val('');
+    }
 }
+
 
 
 function convert(from, to, amount){
