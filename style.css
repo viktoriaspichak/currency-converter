@@ -1,3 +1,23 @@
 #input1{
     margin-bottom: 10px;
 }
+header{
+    max-width: 1300px;
+}
+header div{
+    display: flex;
+    justify-content: center;
+}
+header div p{
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 20px;
+}
+.container{
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+}
+.container div{
+    margin: 0 10px;
+}
